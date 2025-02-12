@@ -148,7 +148,7 @@
 &trans  &trans  &trans  &trans  &trans                    &trans  &kp LA(LS(TAB))  &kp LA(TAB)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LC(LS(TAB))  &kp LC(TAB)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans           &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                        &kp ESCAPE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                        &trans
             >;
 
             sensor-bindings = <&scroll_left_right>;
