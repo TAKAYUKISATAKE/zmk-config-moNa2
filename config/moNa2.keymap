@@ -19,7 +19,7 @@
         selectAll {
             bindings = <&kp LC(A)>;
             key-positions = <11 10>;
-            layers = <0>;
+            layers = <0 6>;
         };
 
         tab {
