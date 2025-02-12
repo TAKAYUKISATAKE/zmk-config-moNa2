@@ -31,12 +31,6 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
         };
-
-        Function {
-            bindings = <&lt 1 A>;
-            key-positions = <18 40>;
-            layers = <6>;
-        };
     };
 
     macros {
@@ -156,10 +150,10 @@
 
         MOUSE {
             bindings = <
-&kp ASTERISK          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                    &kp DEL      &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans
-&mt LCTRL TAB         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS   &trans    &trans  &kp TAB      &mkp MB1  &mkp MB3      &mkp MB2   &trans
-&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &trans    &trans  &mkp MB5     &mkp MB4  &kp DOWN      &trans     &trans
-&kp COLON             &kp KP_NUMBER_0  &number00        &kp PERIOD       &trans     &trans    &trans  &lt 5 ENTER                                     &trans
+&kp ASTERISK          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                             &kp DEL   &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans
+&mt LCTRL TAB         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS   &trans    &trans           &kp TAB   &mkp MB1  &mkp MB3      &mkp MB2   &trans
+&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &trans    &trans           &mkp MB5  &mkp MB4  &kp DOWN      &trans     &trans
+&kp COLON             &kp KP_NUMBER_0  &number00        &kp PERIOD       &trans     &trans    &lt 1 BACKSPACE  &trans                                       &trans
             >;
 
             sensor-bindings = <&scroll_left_right>;
