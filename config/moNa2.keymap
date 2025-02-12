@@ -71,7 +71,13 @@
         sleep_macro: sleep_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(X) &kp U &kp S>;
+            bindings =
+                <&kp LG(X)>,
+                <&macro_wait_time 1>,
+                <&kp U>,
+                <&macro_wait_time 1>,
+                <&kp S>;
+
             label = "SLEEP_MACRO";
         };
     };
