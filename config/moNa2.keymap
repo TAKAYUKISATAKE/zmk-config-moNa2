@@ -34,8 +34,8 @@
 
         Function {
             bindings = <&lt 1 A>;
-            key-positions = <21 18 40>;
-            layers = <6 0>;
+            key-positions = <18 40>;
+            layers = <6>;
         };
     };
 
