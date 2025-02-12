@@ -31,6 +31,12 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
         };
+
+        Function {
+            bindings = <&lt 1 RIGHT_SHIFT>;
+            key-positions = <18 19>;
+            layers = <0 6>;
+        };
     };
 
     macros {
@@ -46,6 +52,13 @@
             #binding-cells = <0>;
             bindings = <&kp KP_N0 &kp KP_N0>;
             label = "NUMBER00";
+        };
+
+        sleep_macro: sleep_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+            label = "SLEEP_MACRO";
         };
     };
 
@@ -97,8 +110,8 @@
             bindings = <
 &kp LC(Z)              &kp LC(Y)  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp LG(TAB)                                     &trans  &trans  &trans  &trans  &trans
 &kp LC(C)              &kp LC(X)  &kp LG(V)               &kp LC(V)                &kp LC(LS(V))  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans                 &trans     &trans                  &trans                   &trans         &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(B))))  &trans     &trans                  &trans                   &trans         &kp LS(LA(LC(LG(V))))    &trans  &trans                          &kp ESC
+&trans                 &trans     &trans                  &trans                   &trans         &sleep_macro             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(B))))  &trans     &trans                  &trans                   &trans         &kp LS(LA(LC(LG(V))))    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -150,10 +163,10 @@
 
         MOUSE {
             bindings = <
-&kp ASTERISK          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                             &kp DEL   &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans
-&mt LCTRL TAB         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS   &trans    &trans           &kp TAB   &mkp MB1  &mkp MB3      &mkp MB2   &trans
-&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &trans    &trans           &mkp MB5  &mkp MB4  &kp DOWN      &trans     &trans
-&kp COLON             &kp KP_NUMBER_0  &number00        &kp PERIOD       &trans     &trans    &lt 1 BACKSPACE  &trans                                       &trans
+&kp ASTERISK          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                    &kp DEL   &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans
+&mt LCTRL TAB         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS   &trans    &trans  &kp TAB   &mkp MB1  &mkp MB3      &mkp MB2   &trans
+&mt LEFT_SHIFT SLASH  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &trans    &trans  &mkp MB5  &mkp MB4  &kp DOWN      &trans     &trans
+&kp COLON             &kp KP_NUMBER_0  &number00        &kp PERIOD       &trans     &trans    &trans  &trans                                       &trans
             >;
 
             sensor-bindings = <&scroll_left_right>;
