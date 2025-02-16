@@ -52,9 +52,14 @@
             key-positions = <12 13>;
         };
 
-        win+V {
-            bindings = <&kp LG(V)>;
-            key-positions = <24 25>;
+        ctrl+z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <23 22>;
+        };
+
+        ctrl+y {
+            bindings = <&kp LC(Y)>;
+            key-positions = <23 24>;
         };
     };
 
