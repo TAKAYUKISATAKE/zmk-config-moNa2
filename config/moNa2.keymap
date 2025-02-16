@@ -88,9 +88,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(X)>,
-                <&macro_wait_time 1>,
+                <&macro_wait_time 5>,
                 <&kp U>,
-                <&macro_wait_time 1>,
+                <&macro_wait_time 5>,
                 <&kp S>;
 
             label = "SLEEP_MACRO";
