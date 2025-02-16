@@ -24,12 +24,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <2 1>;
         };
 
         shift+tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <2 3>;
         };
 
         Function {
@@ -39,16 +39,21 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <23 24>;
+            key-positions = <12 11>;
         };
 
         xcopy {
             bindings = <&kp LC(X)>;
-            key-positions = <23 22>;
+            key-positions = <14 13>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
+            key-positions = <12 13>;
+        };
+
+        Win+V {
+            bindings = <&kp LG(V)>;
             key-positions = <25 24>;
         };
     };
@@ -129,7 +134,7 @@
         layer_1 {
             bindings = <
 &kp LC(Z)          &kp LC(Y)  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp LG(TAB)                                 &trans  &trans  &trans  &trans  &trans
-&kp LC(C)          &kp LC(X)  &kp LG(V)               &kp LC(V)                &kp LC(LS(V))  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans     &trans                  &trans                   &kp LC(LS(V))  &trans               &trans  &trans  &trans  &trans  &trans  &trans
 &trans             &trans     &trans                  &trans                   &trans         &sleep_macro         &trans  &trans  &trans  &trans  &trans  &trans
 &kp LS(LC(LG(Y)))  &trans     &trans                  &trans                   &trans         &kp LS(LC(LG(P)))    &trans  &trans                          &trans
             >;
