@@ -61,6 +61,11 @@
             bindings = <&kp LC(Y)>;
             key-positions = <23 24>;
         };
+
+        win+v {
+            bindings = <&kp LG(V)>;
+            key-positions = <24 25>;
+        };
     };
 
     macros {
