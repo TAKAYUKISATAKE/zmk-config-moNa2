@@ -146,7 +146,7 @@
 &trans             &trans  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp LG(TAB)                                 &trans  &trans  &trans  &trans  &trans
 &kp LG(LC(T))      &trans  &trans                  &kp LA(SPACE)            &kp LC(LS(V))  &trans               &trans  &trans  &trans  &trans  &trans  &trans
 &trans             &trans  &trans                  &trans                   &trans         &sleep_macro         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LC(LG(Y)))  &trans  &trans                  &trans                   &trans         &kp LS(LC(LG(P)))    &trans  &trans                          &kp ESCAPE
+&kp LS(LC(LG(Y)))  &trans  &trans                  &trans                   &trans         &kp LS(LC(LG(P)))    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
