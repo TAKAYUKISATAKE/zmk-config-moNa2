@@ -95,6 +95,17 @@
 
             label = "SLEEP_MACRO";
         };
+
+        freeesearch: freeesearch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(SPACE)>,
+                <&macro_wait_time 5>,
+                <&kp QUESTION &kp QUESTION &kp F &kp ENTER>;
+
+            label = "FREEESEARCH";
+        };
     };
 
     behaviors {
