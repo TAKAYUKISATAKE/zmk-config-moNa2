@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
@@ -95,14 +94,6 @@
 
             label = "SLEEP_MACRO";
         };
-
-        freeesearch: freeesearch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 5>, <&kp F &kp ENTER>;
-
-            label = "FREEESEARCH";
-        };
     };
 
     behaviors {
@@ -152,9 +143,9 @@
         layer_1 {
             bindings = <
 &trans             &trans         &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp LG(TAB)                                 &trans  &trans  &trans  &trans  &trans
-&kp LG(LC(T))      &kp LS(LC(A))  &trans                  &kp LA(SPACE)            &kp LC(LS(V))  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LC(T))      &kp LS(LC(A))  &kp LA(LG(SPACE))       &kp LA(SPACE)            &kp LC(LS(V))  &trans               &trans  &trans  &trans  &trans  &trans  &trans
 &trans             &trans         &trans                  &trans                   &trans         &sleep_macro         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LC(LG(Y)))  &trans         &trans                  &trans                   &freeesearch   &kp LS(LC(LG(P)))    &trans  &trans                          &trans
+&kp LS(LC(LG(Y)))  &trans         &trans                  &trans                   &trans         &kp LS(LC(LG(P)))    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
